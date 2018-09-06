@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+html {
+    font-size: 14px;
+    font-family: 'Lato', 'sans-serif';
+}
+
+body{
+    background: linear-gradient(-135deg, #f4811f 0%, rgba(236, 29, 36, 0.92) 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+
+h1 {
+    font-family: 'billabong';
+    text-align: center;
+    font-size: 9rem;
+    font-weight: 100;
+    margin: 2rem 0;
+    letter-spacing: -1px;
+    color:#fff;
+}
+
+@font-face {
+    font-family: 'billabong';
+	src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot?#iefix") format('embedded-opentype'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.woff") format('woff'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.ttf") format('truetype'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.svg#billabongregular") format('svg');
+}
+
+.photoGrid{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.figure {
+    flex-basis: calc(33.333% - 4rem);
+    border: 1px solid #d3d3d3;
+    padding: 2rem;
+    flex-grow: 1;
+    margin: 0 2rem 2rem 2rem;
+
+}
+
+.photo {
+    width: calc(100% + 4rem);
+    margin: -2rem 0rem 0rem -2rem;
+
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    flex-basis: 48%;
+    color: red;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    line-height: 2;
+    padding: 5px;
+    font-family: 'Lato', 'sans-serif';
+}
+
+.addIcon {
+    margin: 20px auto;
+    display: table;
+    padding: 40px;
+    background: url("https://image.flaticon.com/icons/svg/60/60740.svg") center no-repeat;
+    background-size: contain;
+    border: none;
+}
+
+.form  {
+    background: white;
+    margin: 0 auto;
+    max-width: 360px;
+    padding: 45px;
+    text-align: center;
+}
+
+.form input {
+    font-family: sans-serif;
+    background: #f2f2f2;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;   
+    margin: 0 0 15px;
+
+}
+
+.form button {
+    font-family: 'Lato', 'sans-serif';
+    text-transform: uppercase;
+    background: #ec1d24eb;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.form button:hover {
+    background: #7B8589;
+}
+
+button:hover {
+    border-color: blue;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border: solid #e2e2e2 1px;
+    background: #fff;
+    border-radius: 3px;
+    margin-top:20px;
+    /* overflow: hidden; */
+}
+
+table tr > td,
+table tr > th{
+    border-bottom: solid #e2e2e2  1px;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+table tbody>tr{
+    transition: all 0.3s ease;
+}
+
+table tbody>tr:hover{
+    background: #fafafa;
+    transform: scale(1.1, 1.1);
+}
+
+.action-button{
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.action-button:hover{
+    transform: (1.3);
+}
+
+.action-button.details{
+    color: #5fbc37;
+}
+
+.action-button.edit{
+    color: #ffbb3e;
+}
+
+.action-button.remove{
+    color: #ec1d24eb;
+}
+
+.wrapper{
+    width: 950px;
+    margin: auto;
+}
+
+.action-create{
+    background: transparent;
+    color: #fff;
+    padding: 10px;border-radius: 100px;
+    min-width: 200px;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.action-create:hover{
+    background: #fff;
+    color: #ec1d24eb;
+    border-color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.note{
+    color: #e2e2e2;
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 12px;
+    text-align: left;
+
+}
